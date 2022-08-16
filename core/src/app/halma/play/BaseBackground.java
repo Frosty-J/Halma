@@ -17,8 +17,12 @@ public class BaseBackground {
     }
 
     private void create() {
-        Image upper, upperLeft, upperRight, lowerLeft, lowerRight, lower;
-        LinkedList<LinkedList<Field>> groups;
+        Image upper;
+        Image upperLeft;
+        Image upperRight;
+        Image lowerLeft;
+        Image lowerRight;
+        Image lower;
 
         upper = new Image(new TextureRegionDrawable(new Texture("triangle-p.png")));
         upperRight = new Image(new TextureRegionDrawable(new Texture("triangle-p.png")));
@@ -77,7 +81,10 @@ public class BaseBackground {
     }
 
     private static class Data {
-        Field highestY, highestX, lowestY, lowestX;
+        Field highestY;
+        Field highestX;
+        Field lowestY;
+        Field lowestX;
 
         public Data(Field highestY, Field highestX, Field lowestY, Field lowestX) {
             this.highestY = highestY;
